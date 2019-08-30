@@ -4,7 +4,7 @@ class MainClass {
    static void Main()  {
     Console.WriteLine ("Är det fint väder?:");
     int klar = 0;
-    do {
+    while (klar == 0) {
     string svar = Console.ReadLine();
     if (svar == "ja" ||  svar == "Ja") {
       Console.WriteLine("Vi går på picknick!");
@@ -16,6 +16,6 @@ class MainClass {
     }
     else
       Console.WriteLine ("Jag förstår inte,Försök igen:");
-    } while (klar == 0);
+    }
   }
 }
